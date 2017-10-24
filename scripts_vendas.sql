@@ -239,3 +239,9 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+INSERT INTO `funcionariotipo` (`idtipo`, `tipo`) VALUES ('1', 'ADM'), ('2', 'ALMOXARIFADO'), ('3', 'CONTADOR'), ('4', 'ENTREGADOR'), ('5', 'ESTOQUISTA'), ('6', 'FISCAL'), ('7', 'OPERADOR_CAIXA'), ('8', 'SERVIÇOS_GERAIS'), ('9', 'SEGURANÇA'), ('10', 'TELEMARKETING'), ('11', 'ESTAGIARIO'), ('12', 'JOVEM_APRENDIZ');
+
+INSERT INTO `funcionario` (`cpffuncionario`, `nomefuncionario`, `enderecofuncionario`, `telefonefuncionario`, `emailfuncionario`, `sexofuncionario`, `salariobase`, `dataadmissao`, `datasaida`, `tipo_idtipo`) VALUES ('00000000001', 'ADM', 'SEM ENDERECO', '99999999999', 'ADM@ADM.COM', 'M', '999,99', '2017-10-01 00:00:00', '', '1');
+
+
